@@ -11,9 +11,20 @@ transition: all 0.5s;
 .header{
     background-image: url('../../public/media/Sfondo4.jpg');
     height: 100vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header contacts */
+
+.contact_header{
+    background-image: url('../../public/media/sfondo_contact.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
 }
 
 .text-color{
