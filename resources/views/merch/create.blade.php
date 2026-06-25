@@ -10,7 +10,7 @@
         </div>
         
         <div class="row justify-content-center text-color text-danger">
-            <div class="col-12 col-md-8">
+            {{-- <div class="col-12 col-md-8">
                 <form method="POST" action="{{ route('merch.submit') }}">
                     @csrf
                     <div class="mb-3">
@@ -29,7 +29,7 @@
                     
                     <button type="submit" class="btn btn-primary">Invia</button>
                 </form>
-            </div>
+            </div> --}}
         </div>
     </div>
     
