@@ -11,6 +11,6 @@ protected $table = 'merchs';
 
 protected $fillable = 
 [
-'title', 'genres'
+'title', 'genres', 'img'
 ];
 }

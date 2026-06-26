@@ -4,11 +4,11 @@
    
    <div class="card my-3" style="width: 18rem;">
           {{-- <img src="{{ $img }}" class="card-img-top cardImg" alt=" immagine di {{ $title }}"> --}}
-          <img src="https://picsum.photos/200/300" class="card-img-top cardImg" alt=" immagine della card">
+          <img src="{{Storage::url($merch->img)}}" class="card-img-top cardImg" alt=" immagine della card">
 
           <div class="card-body">
-            <h5 class="card-title">{{ $title }}</h5>
-            <p class="card-text">{{ $genres }}</p>
+            <h5 class="card-title">{{ $merch->title }}</h5>
+            <p class="card-text">{{ $merch->genres }}</p>
             <a href="#" class="btn btn-primary">scopri in dettaglio</a>
             
             {{-- <a href="{{ route('dettaglio.articoli', ['id'=>$articleId]) }}" class="btn btn-primary">scopri in dettaglio</a> --}}

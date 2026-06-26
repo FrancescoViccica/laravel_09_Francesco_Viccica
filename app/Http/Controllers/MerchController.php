@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MerchRequest;
 use Illuminate\Http\Request;
 use App\Models\Merch;
 
@@ -37,15 +38,31 @@ public function create(){
 }
 
 
-public function store(Request $request){
+public function store(MerchRequest $request){
+    
     // dd($request->all());
+
     $title = $request->title;
     $genres = $request->genres;
+    $img=null;
+
+    if($request->file('img')){
+        $img = $request->file('img')->store('img', 'public');
+        // $img = $request->file('img')->store('public/img');
+
+    }
+
+
+    // dd($request->all());
+
     
     
     $merch = Merch::create([
-        'title'=> $request->title,
-        'genres'=> $request->genres
+        // 'title'=> $request->title,
+        'title'=> $title,
+        // 'genres'=> $request->genres,
+        'genres'=> $genres,
+        'img'=>$img
     ]);
 
     // $merch->title = $title;

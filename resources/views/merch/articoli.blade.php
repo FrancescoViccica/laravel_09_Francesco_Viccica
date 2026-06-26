@@ -24,11 +24,13 @@
       
       <div class="col-12 col-md-3">
         <x-cardArticle
+
+        :merch="$merch"
         
-        title="{{ $merch['title'] }}"
+        {{-- title="{{ $merch['title'] }}"
         genres="{{ $merch['genres'] }}"
         articleId="{{ $merch['id'] }}"
-        img="{{ $merch['img'] }}"
+        img="{{ $merch['img'] }}" --}}
         
         ></x-cardArticle>
       </div>
