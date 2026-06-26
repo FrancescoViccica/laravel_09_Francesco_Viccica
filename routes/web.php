@@ -21,6 +21,7 @@ Route::get('/articoli', [MerchController::class, 'articoli'])->name('merch.list'
 
 Route::get('/merch/dettaglio-articoli/{id}', [MerchController::class, 'dettaglioArticoli'])->name('dettaglio.articoli');
 
+
 // rotta mail
 Route::post('/contatti/send', [PublicController::class, 'send_email'])->name('send_email');
 

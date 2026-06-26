@@ -17,6 +17,11 @@
           <li class="nav-item">
             <a class="nav-link button" href="{{ route('contacts') }}">Contatti</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link button" href="{{ route('merch.create') }}">Inserisci Prodotto</a>
+          </li>
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               I Nostri Articoli

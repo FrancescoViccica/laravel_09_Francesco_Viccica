@@ -84,7 +84,7 @@ transition: all 0.5s;
 }
 
 .create_header{
-    background-image: url('../../public/media/sfondo_create.jpg');
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../../public/media/sfondo_create.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
